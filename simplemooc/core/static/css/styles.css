@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+    line-height: 1.7em;
+}
+.l-box {
+    padding: 1em;
+}
+.header {
+    margin: 0 0;
+}
+.header .pure-menu {
+    padding: 0.5em;
+}
+.header .pure-menu li a:hover,
+.header .pure-menu li a:focus {
+    background: none;
+    border: none;
+    color: #aaa;
+}
+body .primary-button {
+    background: #02a6eb;
+    color: #fff;
+}
+.splash {
+    margin: 2em auto 0;
+    padding: 3em 0.5em;
+    background: #eee;
+}
+.splash .splash-head {
+    font-size: 300%;
+    margin: 0em 0;
+    line-height: 1.2em;
+}
+.splash .splash-subhead {
+    color: #999;
+    font-weight: 300;
+    line-height: 1.4em;
+}
+.splash .primary-button {
+    font-size: 150%;
+}
+.content .content-subhead {
+    color: #999;
+    padding-bottom: 0.3em;
+    text-transform: uppercase;
+    margin: 0;
+    border-bottom: 2px solid #eee;
+    display: inline-block;
+}
+.content .content-ribbon {
+    margin: 3em;
+    border-bottom: 1px solid #eee;
+}
+.ribbon {
+    background: #eee;
+    text-align: center;
+    padding: 2em;
+    color: #999;
+}
+.ribbon h2 {
+    display: inline;
+    font-weight: normal;
+}
+.footer #button{
+	width:35px;
+	height:35px;
+	border: #8dffff 12px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+	width:35px;
+	height:35px;
+	border: #3A3A3A 12px solid;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
+}
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+}
+.footer #container{
+	margin-top:5px;
+	width:100%;
+    height:100%;
+    position:relative;
+    top:0;
+    left:0;
+	background: #3A3A3A;
+}
+.footer #cont{
+    position:relative;
+    top:-45px;
+    right:190px;
+	width:150px;
+	height:auto;
+	margin:0 auto;
+}
+.footer_center{
+	width:500px;
+	float:left;
+  text-align:center;
+}
+.footer h3{
+    color: #fff;
+	font-family: 'Helvetica';
+	font-size: 30px;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:40px;
+}
+
+/* Animação do botão do rodapé */
+@media only screen {
+    .footer #button {
+        animation: color_change 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: alternate-reverse;
+    }
+}
+@keyframes color_change{
+    from{
+        border: #2da6b4;
+    }
+    to{
+        background: #7b7b7b;
+    }
+}
